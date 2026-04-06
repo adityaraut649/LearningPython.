@@ -3,7 +3,6 @@
 # Employee Class
 class Employee:
  
-   
     def __init__(self, empname, emppage, empsalary, emprole):
         self.empname = empname
         self.emppage = emppage
@@ -51,6 +50,7 @@ class QA(Employee):
 # Creating Objects
 dev = Developer("Dev1", "Dev Page", 10000, "Developer")
 QA1 = QA("QA1", "QA Page", 10000, "QA")
+
 
 # Calling Methods
 print("----------------")
