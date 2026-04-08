@@ -62,7 +62,97 @@ print(m.add(1, 2, 3, 4, 5, 6, 7, 8, 9, 10))
 
 # in oreder to overcome this problem, we can use *args(0 .... n) list (Flexiable Argument , functional Arguments)
 
+print('----------Operator Overloading(Compile Time Polymorphism)----------')
 
+# 1. Overloading the + operator
+
+#Q 1 What is Operator Overloading?
+#ans: Operator overloading is the ability of an object to take on many forms.
+
+print(5 + 3)
+print("hi" + "hello")
+
+class Number:
+    def __init__(self, num):
+        self.num = num # 10
+
+    def __add__(self, other):
+        return self.num + other
+
+n1 = Number(5)
+n2 = Number(3)
+
+print(n1 + n2)
+
+# 2. Overloading the * operator
+
+class Number:
+    def __init__(self, num):
+        self.num = num # 10
+
+    def __mul__(self, other):
+        return self.num * other
+
+n1 = Number(5)
+n2 = Number(3)
+
+print(n1 * n2)
+
+# 3. Overloading the ** operator
+
+class Number:
+    def __init__(self, num):
+        self.num = num # 10
+
+    def __pow__(self, other):
+        return self.num ** other
+
+n1 = Number(5)
+n2 = Number(3)
+
+print(n1 ** n2)
+
+# 4. Overloading the // operator
+
+class Number:
+    def __init__(self, num):
+        self.num = num # 10
+
+    def __floordiv__(self, other):
+        return self.num // other
+
+n1 = Number(5)
+n2 = Number(3)
+
+print(n1 // n2)
+
+# 5. Overloading the % operator
+
+class Number:
+    def __init__(self, num):
+        self.num = num # 10
+
+    def __mod__(self, other):
+        return self.num % other
+
+n1 = Number(5)
+n2 = Number(3)
+
+print(n1 % n2)
+
+# 6. Overloading the ** operator
+
+class Number:
+    def __init__(self, num):
+        self.num = num # 10
+
+    def __pow__(self, other):
+        return self.num ** other
+
+n1 = Number(5)
+n2 = Number(3)
+
+print(n1 ** n2)
 
 
 
