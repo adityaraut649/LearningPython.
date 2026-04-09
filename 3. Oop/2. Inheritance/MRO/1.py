@@ -258,5 +258,4 @@ class F(D, E):
 
 print(F.mro())
 
-
 # F D B E C A Obj

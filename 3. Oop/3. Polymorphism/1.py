@@ -156,3 +156,6 @@ print(n1 ** n2)
 
 
 
+# Duck typing
+
+# What is Duck typing in python 
