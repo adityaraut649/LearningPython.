@@ -46,7 +46,6 @@ except Exception as e:
 print("Thank you")
 
 #Example 4: try-except-else
-
 try:
     num = int(input("Enter a numbers: "))
     result = num ** 2
@@ -58,7 +57,6 @@ else:
 
 
 # 5. What is the purpose of the finally block?
-
 try:
     a = int(input("Enter a number: "))
     result = a ** 2
@@ -70,3 +68,48 @@ else:
     print("The square of the number is: " , result)
 finally:
     print("Thank you")
+
+
+
+# try:
+#     a = int(input())
+#     b = int(input())
+#     c = [1, 2, 3]
+#     d = a / b
+#     d = [5]
+#     print(d)
+# except (ZeroDivisionError) as e:
+#     print('Error ' , e)
+# except (ValueError) as e:
+#     print('Error', e)
+# except (IndexError) as e:
+#     print('Error: ', e)
+# except Exception as e:
+#     print("Error: Exception: " , e)
+# finally:
+#     print("Thank you")
+
+
+
+## Raise key word
+
+age = int(input("Enter your age: "))
+
+if age < 18:
+    raise ValueError("You are not old enough to vote")
+elif age > 65:
+    raise ValueError("You are too old to vote")
+else:
+    print("You are eligible to vote")
+
+
+def calculate_square_root(number):
+    if number < 0: 
+        raise ValueError("Cannot calulate the square root of a negative numbers")
+    return number ** 0.5
+
+try:
+    result = calculate_square_root(-9)
+    print(f"The result is: {result}")
+except ValueError as e:
+    print(f"Error: {e}")
